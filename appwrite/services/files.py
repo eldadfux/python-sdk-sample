@@ -3,6 +3,9 @@ from ..service import Service
 
 class Files(Service):
 
+    def __init__(self, client):
+        super(Files, self).__init__(client)
+
     def upload(self, x, y, z, file):
         """Mock a post request for SDK tests"""
 

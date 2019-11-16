@@ -3,6 +3,9 @@ from ..service import Service
 
 class Foo(Service):
 
+    def __init__(self, client):
+        super(Foo, self).__init__(client)
+
     def get(self, x, y, z):
         """Mock a get request for SDK tests"""
 
